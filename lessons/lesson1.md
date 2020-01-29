@@ -5,6 +5,10 @@ nav_order: 2
 description: C# Dependency Injection
 ---
 
+[![ad](../img/bootcamp.jpg)](https://rclapp.com/bootcamp.html)
+
+****
+
 # Dependency inversion principle
 
 This principle tells you not to write any tightly coupled code. It focuses on the approach where the higher classes are not dependent on the lower classes, but instead, depend upon the abstraction of the lower classes. 
