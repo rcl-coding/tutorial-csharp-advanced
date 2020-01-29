@@ -11,7 +11,7 @@ description: C# Delegates
 
 ## Delegates
 
-Coders often  to pass a method as a parameter of other methods. For this purpose we create and use delegates.
+Coders often need to pass a method as a parameter to other methods. For this purpose we create and use delegates.
 
 - Add a delegate named DelegateAdder
 
@@ -132,9 +132,11 @@ Product of 1 and 3 is 3
 
 The example above illustrates how a delegate can be used as a parameter to a method.
 
+The MathOperation method uses the delegate, delegateOperation as a parameter.
+
 ## Delegate and lambda expressions
 
-you are able to create "inline" delegates without having to specify any additional type or method. You simply inline the definition of the delegate where you need it.
+You are able to create "inline" delegates without having to specify any additional type or method. You simply inline the definition of the delegate where you need it.
 
 - Write the following code :
 
@@ -209,7 +211,7 @@ namespace HelloWorld
 
 ## Func Delegate
 
-The .NET framework has some in built delegates. The Func delegate is one of them. The Func delegate encapsulates a method that returns a type T. The method can take 0, 1 or many parameters.
+The .NET framework has some built-in delegates. The Func delegate is one of them. The Func delegate encapsulates a method that returns a type T. The method can take 0, 1 or many parameters.
 
 You do not need to define a custom method for the Func delegate.
 
@@ -245,7 +247,7 @@ Output
 Sum of 1 and 3 is 4
 ```
 
-The MathOperation method takes a Func as a parameter. The Func takes two int parameters and returns an int.
+The MathOperation method takes a Func delegate as a parameter. The Func takes two int parameters and returns an int.
 
 We use a lambda expression to use the Func to add two numbers.
 
@@ -255,7 +257,7 @@ We use a lambda expression to use the Func to add two numbers.
 
 ## Action Delegate
 
-The Action delegate is a built in delegate. The Action delegate returns void. It can 0, 1 or many parameters.
+The Action delegate is a built-in delegate. The Action delegate returns void. It can 0, 1 or many parameters.
 
 - Write the following code :
 
@@ -295,7 +297,7 @@ s => Console.WriteLine(s)
 
 ## Predicate Delegate
 
-The Predicate delegate is a built in delegate. It is used when you need to determine if the argument satisfies the condition of the delegate.
+The Predicate delegate is a built-in delegate. It is used when you need to determine if the argument satisfies the condition of the delegate.
 
 It is equivalent to Func<T,bool>
 
@@ -369,6 +371,78 @@ Responded with 200
 The MakeRequest method uses an Action delegate to define a call back method.
 
 The call back method processes the result of the GetResponse method.
+
+## Multicast Delegate
+
+Multiple objects can be assigned to one delegate instance by using the + operator. 
+
+The multicast delegate contains a list of the assigned delegates. When the multicast delegate is called, it invokes the delegates in the list, in order. Only delegates of the same type can be combined.
+
+The - operator can be used to remove a component delegate from a multicast delegate.
+
+- Write the following code :
+
+```csharp
+using System;
+
+namespace HelloWorld
+{
+    class Program
+    {
+        // Add a delegate
+        delegate void greeterDelegate(string s);
+
+        // Add a method for the delegate
+        static void Hello(string s)
+        {
+            Console.WriteLine($"Hello, {s}!");
+        }
+
+        // Add another method for the delegate
+        static void Goodbye(string s)
+        {
+            Console.WriteLine($"Goodbye, {s}!");
+        }
+
+        static void Main(string[] args)
+        {
+            // Instantiate the delegates
+            greeterDelegate hi = Hello;
+            greeterDelegate bye = Goodbye;
+
+            // Combine delegates
+            greeterDelegate multiDelegate = hi + bye;
+            // Remove a delegate
+            greeterDelegate minusDelegate = hi - bye;
+
+            // Call the delegates
+            multiDelegate("Combined Delegate");
+            minusDelegate("Minus Delegate");
+        }
+    }
+}
+
+```
+
+Output
+
+```
+  Hello, Combined Delegate!
+  Goodbye, Combined Delegate!
+  Hello, Minus Delegate!
+```
+
+In the example above , we combine delegates with the + operator
+
+```csharp
+greeterDelegate multiDelegate = hi + bye
+```
+
+We remove a delegate component with the - operator
+
+```csharp
+greeterDelegate minusDelegate = hi - bye;
+```
 
 ****
 
