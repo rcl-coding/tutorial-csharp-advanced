@@ -112,9 +112,9 @@ The specification for the generic type T is deferred to when the class is instan
 ArrayCounter<string> stringArrayCounter = new ArrayCounter<string>();
 ```
 
-## List<T> example
+## List< T > example
 
-The **List<T>** collection is a commonly used Generic. T can be any type.
+The **List< T >** collection is a commonly used Generic. T can be any type.
 
 The following code uses List<T> :
 
