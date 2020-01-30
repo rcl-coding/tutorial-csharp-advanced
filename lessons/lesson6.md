@@ -1,7 +1,7 @@
 ---
-title: Lesson 5 - Async Programming
+title: Lesson 6 - Async Programming
 has_children: false
-nav_order: 5
+nav_order: 7
 description: C# Async Programming
 ---
 
@@ -45,7 +45,7 @@ namespace HelloWorld
 
         static async Task Main(string[] args)
         {
-            // 1. This Makes a request and yields to the caller 'Main"
+            // 1. This makes a request and yields to the caller 'Main"
             Task<string> getResponseTask = GetWebResponseAsync();
             // 2. You can continue to do independent work
             DoIndependentWork();
@@ -56,6 +56,13 @@ namespace HelloWorld
         }
     }
 }
+```
+
+Output
+
+```
+Doing independent work ...
+Received web response : 200 OK ...
 ```
 
 1. Make a request to a long running process. Then, yield to the caller, 'Main', so that work can continue.
