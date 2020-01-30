@@ -25,7 +25,7 @@ namespace HelloWorld
     public static class MyExtensions
     {
         // Extension method for String type
-        public static string ReverseString(this String s)
+        public static string Reverse(this String s)
         {
             char[] charArray = s.ToCharArray();
             Array.Reverse(charArray);
