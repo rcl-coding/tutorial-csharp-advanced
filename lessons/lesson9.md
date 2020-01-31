@@ -19,7 +19,7 @@ SOLID is an acronym for 5 design principles when doing Object Oriented Programmi
 
 A class should have only one responsibility. Consider the following class:
 
-```csharp
+```java
 using System;
 
 namespace DesignPatterns
@@ -48,7 +48,7 @@ The GenerateReport class violates the single responsibility principle since the 
 
 We can fix this violation by creating separate classes for saving and downloading files.
 
-```csharp
+```java
 using System;
 
 namespace DesignPatterns
@@ -84,7 +84,7 @@ namespace DesignPatterns
 A class should be open for extension but closed for modification. The EmployeePayment class below violates this principle.
 
 
-```csharp
+```java
 using System;
 
 namespace LearnCSharp
@@ -133,7 +133,7 @@ Also, the EmployeePayment class is closed for extension, since the CalculatePay(
 
 We can use an interface to fix the problem.
 
-```csharp
+```java
 using System;
 
 namespace LearnCSharp
@@ -189,7 +189,7 @@ A child class should be replaceable (substitutable) with its parent class. Child
 
 If you run this code , you will get an exception.
 
-```csharp
+```java
 using System;
 using System.Collections.Generic;
 
@@ -258,7 +258,7 @@ In the previous example, we saw the TemporaryEmployee class being forced to impl
 
 We can fix the code by creating an additional interface named IEmployeePension and segregating the CalculatePensionContribution() method.
 
-```csharp
+```java
 using System;
 using System.Collections.Generic;
 
@@ -325,7 +325,7 @@ This principle tells you not to write any tightly coupled code. It focuses on th
 
 Consider the following tightly coupled code.
 
-```csharp
+```java
 using System;
 
 namespace LearnCSharp
@@ -376,7 +376,7 @@ If we want to use SMS instead of Email, we will need to modify the MessageBroker
 
 To fix the problem, we will introduce an abstraction for sending messages. The MessageBroker class will depend on this abstraction rather than the concrete Email class.
 
-```csharp
+```java
 using System;
 
 namespace LearnCSharp
@@ -451,7 +451,7 @@ The EmailSender and SMSSender class inherits fom the interface. This allows the 
 <script>
 var disqus_config = function () {
 this.page.url = 'https://csharpadvanced.tutorial.rclapp.com/lessons/lesson9.html';
-this.page.identifier = 'f05-09'; 
+this.page.identifier = 'a05-09'; 
 };
 (function() { 
 var d = document, s = d.createElement('script');

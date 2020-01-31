@@ -27,7 +27,7 @@ An event sender pushes a notification that an event has happened, and an event r
 
 Write the following code :
 
-```csharp
+```java
 using System;
 
 namespace HelloWorld
@@ -129,7 +129,7 @@ Speed: 60mph
 <script>
 var disqus_config = function () {
 this.page.url = 'https://csharpadvanced.tutorial.rclapp.com/lessons/lesson3.html';
-this.page.identifier = 'f05-03'; 
+this.page.identifier = 'a05-03'; 
 };
 (function() { 
 var d = document, s = d.createElement('script');

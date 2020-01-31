@@ -19,7 +19,7 @@ Coders often need to pass a method as a parameter to other methods. For this pur
 
 - Call the delegate as shown below :
 
-```csharp
+```java
 using System;
 
 namespace HelloWorld
@@ -63,12 +63,12 @@ The method, Adder, takes two int parameters and returns and int, therefore , the
 
 We instantiate the delegate as follows :
 
-```csharp
+```java
 DelegateAdder delAdder = Adder;
 ```
 We call the delegate as follows :
 
-```csharp
+```java
 int sum = delAdder(x, y);
 ```
 
@@ -76,7 +76,7 @@ int sum = delAdder(x, y);
 
 - Write the following code :
 
-```csharp
+```java
 using System;
 
 namespace HelloWorld
@@ -140,7 +140,7 @@ You are able to create "inline" delegates without having to specify any addition
 
 - Write the following code :
 
-```csharp
+```java
 using System;
 
 namespace HelloWorld
@@ -181,7 +181,7 @@ In the lambda expression, (int x, int y) are the inputs. The => symbol denotes a
 
 In this case, the lambda expression can be further shortened by removing method notations and inferring the types for the parameters x and y.
 
-```csharp
+```java
 using System;
 
 namespace HelloWorld
@@ -217,7 +217,7 @@ You do not need to define a custom method for the Func delegate.
 
 - Write the following code :
 
-```csharp
+```java
 using System;
 
 namespace HelloWorld
@@ -251,7 +251,7 @@ The MathOperation method takes a Func delegate as a parameter. The Func takes tw
 
 We use a lambda expression to use the Func to add two numbers.
 
-```csharp
+```java
 (x,y) => x + y
 ```
 
@@ -261,7 +261,7 @@ The Action delegate is a built-in delegate. The Action delegate returns void. It
 
 - Write the following code :
 
-```csharp
+```java
 using System;
 
 namespace HelloWorld
@@ -291,7 +291,7 @@ The OutputLine method takes an Action delegate as a parameter. The delegate retu
 
 A lambda expression is used to write to the console window using the delegate.
 
-```csharp
+```java
 s => Console.WriteLine(s)
 ```
 
@@ -303,7 +303,7 @@ It is equivalent to Func<T,bool>
 
 - Write the following code :
 
-```csharp
+```java
 using System;
 
 namespace HelloWorld
@@ -326,7 +326,7 @@ namespace HelloWorld
 
 The HasWon method takes a predicate. We use the lambda expression :
 
-```csharp
+```java
 s => s > 50
 ```
 
@@ -336,7 +336,7 @@ to determine if the score is more than 50.
 
 You can use delegates for call back patterns. The following code illustrates this :
 
-```csharp
+```java
 using System;
 
 namespace HelloWorld
@@ -382,7 +382,7 @@ The - operator can be used to remove a component delegate from a multicast deleg
 
 - Write the following code :
 
-```csharp
+```java
 using System;
 
 namespace HelloWorld
@@ -434,13 +434,13 @@ Output
 
 In the example above , we combine delegates with the + operator
 
-```csharp
+```java
 greeterDelegate multiDelegate = hi + bye
 ```
 
 We remove a delegate component with the - operator
 
-```csharp
+```java
 greeterDelegate minusDelegate = hi - bye;
 ```
 
@@ -454,7 +454,7 @@ greeterDelegate minusDelegate = hi - bye;
 <script>
 var disqus_config = function () {
 this.page.url = 'https://csharpadvanced.tutorial.rclapp.com/lessons/lesson2.html';
-this.page.identifier = 'f05-02'; 
+this.page.identifier = 'a05-02'; 
 };
 (function() { 
 var d = document, s = d.createElement('script');

@@ -15,7 +15,7 @@ This principle tells you not to write any tightly coupled code. It focuses on th
 
 Consider the following tightly coupled code.
 
-```csharp
+```java
 using System;
 
 namespace LearnCSharp
@@ -68,10 +68,10 @@ To fix the problem, we will introduce an abstraction for sending messages. The M
 
 - Update the code as follows :
 
-```csharp
+```java
 using System;
 
-namespace LearnCSharp
+namespace LearnCsharp
 {
     class Program
     {
@@ -145,7 +145,7 @@ The EmailSender and SMSSender class inherits fom the interface. This allows the 
 <script>
 var disqus_config = function () {
 this.page.url = 'https://csharpadvanced.tutorial.rclapp.com/lessons/lesson1.html';
-this.page.identifier = 'f05-01'; 
+this.page.identifier = 'a05-01'; 
 };
 (function() { 
 var d = document, s = d.createElement('script');

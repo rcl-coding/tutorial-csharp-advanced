@@ -15,7 +15,7 @@ The Factory Method is a frequently used creational design pattern. The responsib
 
 - Write the following code :
 
-```csharp
+```java
 using System;
 
 namespace LearnCSharp
@@ -93,7 +93,7 @@ A factory that creates other factories, and these factories in turn create objec
 
 - Write the following code :
 
-```csharp
+```java
 using System;
 
 namespace LearnCSharp
@@ -193,7 +193,7 @@ These factories in turn create objects from the VegetableSoup and Steak classes 
 <script>
 var disqus_config = function () {
 this.page.url = 'https://csharpadvanced.tutorial.rclapp.com/lessons/lesson8.html';
-this.page.identifier = 'f05-08'; 
+this.page.identifier = 'a05-08'; 
 };
 (function() { 
 var d = document, s = d.createElement('script');

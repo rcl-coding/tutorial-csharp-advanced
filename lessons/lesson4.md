@@ -15,7 +15,7 @@ Generics introduce the concept of type parameters to the .NET Framework, which m
 
 - Consider the following code
 
-```csharp
+```java
 using System;
 
 namespace HelloWorld
@@ -62,7 +62,7 @@ To solve this we can use Generics.
 
 - Write the following code :
 
-```csharp
+```java
 using System;
 
 namespace HelloWorld
@@ -102,13 +102,13 @@ Length of int array is 4
 
 The ArrayCounter class now has a single method to get the length of the array. This method takes and array of type T (Generic).
 
-```csharp
+```java
 public int GetArrayLength(T[] array)
 ```
 
 The specification for the generic type T is deferred to when the class is instantiated. 
 
-```csharp
+```java
 ArrayCounter<string> stringArrayCounter = new ArrayCounter<string>();
 ```
 
@@ -118,7 +118,7 @@ The **List< T >** collection is a commonly used Generic. T can be any type.
 
 The following code uses List<T> :
 
-```csharp
+```java
 using System;
 using System.Collections.Generic;
 
@@ -151,7 +151,7 @@ By constraining the type parameter, you increase the number of allowable operati
 
 - Write the following code :
 
-```csharp
+```java
 using System;
 
 namespace HelloWorld
@@ -205,7 +205,7 @@ Commonly use constraints include :
 
 - Write the following code :
 
-```csharp
+```java
 using System;
 
 namespace HelloWorld
@@ -270,7 +270,7 @@ The code above illustrates the use of multiple constraints.
 
 You can apply constraints to multiple parameters, and multiple constraints to a single parameter, as shown in the following example:
 
-```csharp
+```java
 class Base { }
 class Test<T, U>
     where U : struct
@@ -284,7 +284,7 @@ A generic method is a method that is declared with type parameters
 
 - Write the following code :
 
-```csharp
+```java
 using System;
 
 namespace HelloWorld
@@ -321,7 +321,7 @@ The code below is an example of a Generic Interface.
 - Write the following code :
 
 
-```csharp
+```java
 using System;
 using System.Collections.Generic;
 
@@ -386,7 +386,7 @@ IRepository is a Generic Interface of type T.
 <script>
 var disqus_config = function () {
 this.page.url = 'https://csharpadvanced.tutorial.rclapp.com/lessons/lesson4.html';
-this.page.identifier = 'f05-04'; 
+this.page.identifier = 'a05-04'; 
 };
 (function() { 
 var d = document, s = d.createElement('script');

@@ -19,7 +19,7 @@ In an asynchronous process, the application can continue with other work that do
 
 - Write the following code
 
-```csharp
+```java
 using System;
 using System.Threading;
 using System.Threading.Tasks;
@@ -83,7 +83,7 @@ Received web response : 200 OK ...
 <script>
 var disqus_config = function () {
 this.page.url = 'https://csharpadvanced.tutorial.rclapp.com/lessons/lesson6.html';
-this.page.identifier = 'f05-06'; 
+this.page.identifier = 'a05-06'; 
 };
 (function() { 
 var d = document, s = d.createElement('script');

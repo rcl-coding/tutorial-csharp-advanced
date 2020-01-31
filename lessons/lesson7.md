@@ -9,7 +9,7 @@ description: C# Extensions
 
 ****
 
-# Extension 
+# Extensions 
 
 Extension methods enable you to "add" methods to existing types without creating a new derived type, recompiling, or otherwise modifying the original type. Extension methods are a special kind of static method, but they are called as if they were instance methods on the extended type.
 
@@ -17,7 +17,7 @@ Extension methods enable you to "add" methods to existing types without creating
 
 - Create a new C# file and add the following code
 
-```csharp
+```java
 using System;
 
 namespace HelloWorld
@@ -43,7 +43,7 @@ The example shows an extension method defined for the System.String class. Note 
 
 ## Use an extension
 
-```csharp
+```java
 namespace HelloWorld
 {
     class Program
@@ -77,7 +77,7 @@ The example above demonstrates how the extension is used.
 <script>
 var disqus_config = function () {
 this.page.url = 'https://csharpadvanced.tutorial.rclapp.com/lessons/lesson7.html';
-this.page.identifier = 'f05-07'; 
+this.page.identifier = 'a05-07'; 
 };
 (function() { 
 var d = document, s = d.createElement('script');

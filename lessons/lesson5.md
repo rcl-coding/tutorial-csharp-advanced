@@ -19,7 +19,7 @@ After an attribute is associated with an entity, the attribute can be queried at
 
 - Write the following code :
 
-```csharp
+```java
 using System;
 
 namespace LearnCSharp
@@ -88,7 +88,7 @@ Finally, we locate the Developer custom attribute for the Adder class and use it
 <script>
 var disqus_config = function () {
 this.page.url = 'https://csharpadvanced.tutorial.rclapp.com/lessons/lesson5.html';
-this.page.identifier = 'f05-05'; 
+this.page.identifier = 'a05-05'; 
 };
 (function() { 
 var d = document, s = d.createElement('script');
